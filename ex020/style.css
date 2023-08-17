@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#principal{
+    height: 1000px;
+    width: 1000px;
+}
+.config{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+    width: 300px;
+    border:1px solid black;
+    display: inline-block;
+    background-color: lightgray;
+    text-align: center;
+    margin: auto;
+}
+div#id1 img{
+    display: none;
+}
+div#id2 img{
+    display: none;
+}
+div#id3 img{
+    display: none;
+}
+div#id1:hover img{
+    display: block;
+}
+div#id2:hover img{
+        display: block;
+}
+div#id3:hover img{
+            display: block;
+        
+}
+
