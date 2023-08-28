@@ -8,11 +8,16 @@
         table{
             border-collapse: collapse;
             width: 400px;
+            position: relative;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(128, 128, 128, 0.452);
         }
 
         td, th {
             border: 1px solid black;
-            padding: 3px;
+            padding: 3px 3px 3px 7px
         }
 
         td.num {
@@ -20,9 +25,15 @@
         }
         thead, tfoot {
             text-align: center;
-            background-color: grey;
+            background-color: rgb(85, 79, 79);
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(85, 79, 79);
+
+            }
         caption {
             font-size: 1.5em;
             font-weight: bold;
@@ -37,6 +48,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
